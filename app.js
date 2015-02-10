@@ -31,6 +31,7 @@ function aNumber(num){
 	if (isNaN(num)) {
 		$('#results').empty();
 		$('#results').append('<p>Please enter a valid number.</p>');
+		return false;
 	}
 	startGame(num);
 }

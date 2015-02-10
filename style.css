@@ -54,4 +54,5 @@ input {
 	font-family: arial;
 	line-height: 1.2em;
 	position: relative;
+	z-index: 100;
 }
