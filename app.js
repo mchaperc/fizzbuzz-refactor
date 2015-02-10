@@ -11,22 +11,26 @@ $(document).ready(function() {
 });
 
 function startGame(num) {
+	$('#results').slideUp(750);
+	$('#results').empty().delay(500);
 	for (var i = 1; i <= num; i++) {
 			if (i%5 === 0 && i%3 === 0) {
-				$('body').append('<p>Fizz Buzz</p>');
+				$('#results').append('<p>Fizz Buzz</p>');
 			} else if (i%3 === 0) {
-				$('body').append('<p>Fizz</p>');
+				$('#results').append('<p>Fizz</p>');
 			} else if (i%5 === 0) {
-				$('body').append('<p>Buzz</p>');
+				$('#results').append('<p>Buzz</p>');
 			} else {
-				$('body').append('<p>' + i + '</p>');
+				$('#results').append('<p>' + i + '</p>');
 			}
 	}
+	$('#results').slideDown(1500);
 }
 
 function aNumber(num){
 	if (isNaN(num)) {
-		$('body').append('<p>Please enter a valid number.</p>');
+		$('#results').empty();
+		$('#results').append('<p>Please enter a valid number.</p>');
 	}
 	startGame(num);
 }

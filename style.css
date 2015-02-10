@@ -1,0 +1,57 @@
+body {
+	margin: 0 auto;
+	background-image: url('http://i.imgur.com/hH0upNX.jpg');
+}
+
+.content {
+	max-width: 900px;
+	background-color: rgba(0, 0, 0, .6);
+	margin: 0 auto;
+	color: white;
+	padding: 1em;
+	border-radius: 0 0 30px 30px;
+	font-family: arial;
+	line-height: 1.2em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+	font-family: monospace;
+}
+
+.numbered {
+	position: relative;
+	left: 3em;
+}
+
+#num-form {
+	text-align: center;
+}
+
+.inputEl {
+	text-align: center;
+}
+
+input {
+	font-size: 1.2em;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	box-shadow: 0 0 5px white;
+	text-align: center;
+}
+
+#results {
+	display: none;
+	text-align: center;
+	max-width: 200px;
+	background-color: rgba(0, 0, 0, .6);
+	margin: 0 auto;
+	color: white;
+	padding: 1em;
+	border-radius: 0 0 30px 30px;
+	font-family: arial;
+	line-height: 1.2em;
+	position: relative;
+}
