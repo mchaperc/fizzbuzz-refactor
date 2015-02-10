@@ -36,14 +36,10 @@ function aNumber(num){
 	if (isNaN(num)) {
 		$('#results').slideUp(750, function() {
 			$('#results').empty();
+			$('#results').append('<p>Please enter a valid number.</p>');
 		})
-		addError();
+		$('#results').slideDown(500);
 		return false;
 	}
 	startGame(num);
-}
-
-function addError() {
-	$('#results').append('<p>Please enter a valid number.</p>');
-	$('#results').slideDown(500);
 }
